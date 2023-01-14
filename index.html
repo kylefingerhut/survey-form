@@ -31,25 +31,28 @@
         <hr>
         <label>Will you care diligently for the cat(s)?</label>
         <label for="button">
-            <input id="button" type="radio" name="buttons"> Yes.
+            <input id="button" type="radio" name="buttons" value="agree"> Yes.
         </label>
         <label for="button2">
-            <input id="button2" type="radio" name="buttons"> No, I will not be adopting any cats.
+            <input id="button2" type="radio" name="buttons" value="disagree"> No, I will not be adopting any cats.
         </label>
         <hr>
         <label id="blank-space-bottom">Which other pets do you (plan to) have at home?</label>
-        <label id="checkboxes"> 
-            <input type="checkbox" value="box1" name="box1"> Dog(s)
-            <input type="checkbox" value="box2" name="box2"> Cat(s)
-            <input type="checkbox" value="box3" name="box3"> Reptile(s)
-            <input type="checkbox" value="box4" name="box4"> Bird(s)
-            <input type="checkbox" value="box5" name="box5"> Other animal(s)
-        </label>
-        <label for="other" id="blank-space-top">If you selected "Other animal(s)", which other animals do you have?</label>
+        <input id="dog-box" type="checkbox" value="dog" name="dog" id="dog">
+        <label class="checkboxes" for="dog">Dog(s)</label>
+        <input type="checkbox" value="cat" name="cat" id="cat">
+        <label class="checkboxes" for="cat">Cat(s)</label>
+        <input type="checkbox" value="reptile" name="reptile" id="reptile">
+        <label class="checkboxes" for="reptile">Reptile(s)</label>
+        <input type="checkbox" value="bird" name="bird" id="bird">
+        <label class="checkboxes" for="bird">Bird(s)</label>
+        <input type="checkbox" value="other-animal" name="other-animal" id="other-animal">
+        <label class="checkboxes" for="other-animal">Other animal(s)</label>
+        <label for="other" id="blank-space-top">If you selected "Other animal(s)", which other animal(s) do you have?</label>
         <input type="text" id="other">
         <hr>
         <label for="text">Is there anything else you would like to let us know?</label>
-        <textarea cols="50" rows="5" placeholder="Additional information here..." id="text"></textarea>
+        <textarea cols="25" rows="3" placeholder="Additional information here..." id="text"></textarea>
         <hr>
         <input type="submit" id="submit">
     </form>

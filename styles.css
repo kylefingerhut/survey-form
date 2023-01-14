@@ -58,10 +58,6 @@ input[type="checkbox"] {
     margin-left: 10px;
 }
 
-input[type="checkbox"]:first-of-type {
-    margin-left: 0;
-}
-
 select, textarea {
     font-family: Helvetica, arial, sans-serif;
     font-size: 15px;
@@ -81,14 +77,32 @@ hr {
     border-color: pink;
 }
 
-input[type="text"], input[type="email"], select, textarea {
-    padding: 5px;
-}
-
 #blank-space-top {
     margin-top: 20px;
 }
 
 #blank-space-bottom {
     margin-bottom: 13px;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    padding: 5px;
+}
+
+input[type="number"]::placeholder {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.checkboxes {
+    display: inline-block;
+}
+
+#number {
+    width: 30px;
+    text-align: center;
+}
+
+#dog-box {
+    margin-left: 0;
 }
