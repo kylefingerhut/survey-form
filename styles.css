@@ -106,3 +106,7 @@ input[type="number"]::placeholder {
 #dog-box {
     margin-left: 0;
 }
+
+#submit {
+    background-color: white;
+}
