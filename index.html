@@ -5,8 +5,8 @@
     <title>Cat Adoption Form</title>
 </head>
 <body>
-    <h1 id="title">Form for Cat Adoption</h1>
-    <p id="description">Please fill out this form if you are looking to adopt a cat!</p>
+    <h1 id="title">Cat Adoption Form</h1>
+    <p id="description">Please fill out this form if you are looking to adopt a cat.</p>
     <form id="survey-form">
         <label for="name" id="name-label">First name:</label>
         <input placeholder="Your first name here" required id="name" type="text">
@@ -14,6 +14,7 @@
         <input required id="last-name" type="text" placeholder="Your last name here">
         <label for="email" id="email-label">Email:</label>
         <input required id="email" type="email" placeholder="Your email here">
+        <hr>
         <label for="number" id="number-label">If you would like to adopt more than one cat, how many would you like to adopt? (2 or 3)</label>
         <input id="number" type="number" min="2" max="3" placeholder="#">
         <label for="dropdown">What type of cat would be you most like?</label>
@@ -26,6 +27,7 @@
             <option value="5">Ragdoll</option>
             <option value="6">Burmese</option>
         </select>
+        <hr>
         <label>Will you care diligently for the cat(s)?</label>
         <label for="button">
             <input id="button" type="radio" name="buttons"> Yes.
@@ -33,18 +35,21 @@
         <label for="button2">
             <input id="button2" type="radio" name="buttons"> No, I will not be adopting any cats.
         </label>
-        <label>Which other pets do you (plan to) have at home?</label>
-        <label> 
+        <hr>
+        <label id="blank-space-bottom">Which other pets do you (plan to) have at home?</label>
+        <label id="checkboxes"> 
             <input type="checkbox" value="box1" name="box1"> Dog(s)
             <input type="checkbox" value="box2" name="box2"> Cat(s)
             <input type="checkbox" value="box3" name="box3"> Reptile(s)
             <input type="checkbox" value="box4" name="box4"> Bird(s)
             <input type="checkbox" value="box5" name="box5"> Other animal(s)
         </label>
-        <label for="other">If you selected "Other animal(s)", which other animals do you have?</label>
+        <label for="other" id="blank-space-top">If you selected "Other animal(s)", which other animals do you have?</label>
         <input type="text" id="other">
+        <hr>
         <label for="text">Is there anything else you would like to let us know?</label>
-        <textarea placeholder="Additional information here..." id="text"></textarea>
+        <textarea cols="50" rows="5" placeholder="Additional information here..." id="text"></textarea>
+        <hr>
         <input type="submit" id="submit">
     </form>
 </body>
