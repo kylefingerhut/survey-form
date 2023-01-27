@@ -1,3 +1,1 @@
-# survey-form
-
-This is a simple survey form created with the goal of practicing my HTML and CSS skills.
+# This is a survey form I created while following the FreeCodeCamp's Responsive Web Design course. It is a simple survey form (the first I ever  made) that is, naturally, regarding cats.
